@@ -29,32 +29,32 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+vi:
   hello: "Hello world"
   static_pages:
     home:
-      name: "Home page"
+      name: "Trang chủ"
       content_html: '<p>
-  This is a home page for
-  <a href="https://www.railstutorial.org/"> Ruby On Rails Tutorial</a>
-  sample application.</p>'
+        Đây là trang chủ của ứng dụng ví dụ dựa trên e-book
+        <a href="https://www.railstutorial.org/"> hướng dẫn Ruby On Rails</a>.
+        </p>'
     about:
-      name: "About"
+      name: "Về chúng tôi"
       content_html: '<p>
-        The <a href="https://www.railstutorial.org/"><em>Ruby on Rails
-        Tutorial</em></a> is a
-        <a href="https://www.railstutorial.org/book">book</a> and
-        <a href="http://screencasts.railstutorial.org/">screencast series</a>
-        to teach web development with
+        <a href="https://www.railstutorial.org/"><em>Hướng dẫn Ruby on Rails
+        </em></a> là một
+        <a href="https://www.railstutorial.org/book">cuốn sách</a> và
+        <a href="http://screencasts.railstutorial.org/">là loạt screencasts</a>
+        nhằm dạy phát triển web với
         <a href="http://rubyonrails.org/">Ruby on Rails</a>.
-        This is the sample application for the tutorial.
+        Đây là ứng dụng mẫu cho ví dụ này.
         </p>'
     help:
-      name: "Help"
+      name: "Trợ giúp"
       content_html: '<p>
-        Get help on the Ruby on Rails Tutorial at the
+        Tìm trợ giúp về ROR trên
         <a href="https://www.railstutorial.org/help">Rails Tutorial help section</a>.
-        To get help on this sample app, see the
+        Tìm trợ giúp về ứng dụng mẫu này truy cập sách
         <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
-        book</a>.
+        </a>.
         </p>'
