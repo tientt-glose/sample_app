@@ -58,3 +58,5 @@ vi:
         <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
         </a>.
         </p>'
+  helpers:
+    base_title: "Hướng dẫn Ruby on Rails "
