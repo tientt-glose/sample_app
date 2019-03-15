@@ -58,3 +58,5 @@ en:
         <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
         book</a>.
         </p>'
+  helpers:
+    base_title: "Ruby on Rails Tutorial Sample App"
