@@ -1,0 +1,16 @@
+<footer class="footer">
+  <small>
+    <ul>
+    <li><%= link_to "English", locale: "en" %></li>
+    <li><%= link_to "Vietnamese", locale: "vi" %></li>
+    <h2> <%= t(".info").html_safe%></h2>
+    </ul>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("static_pages.about.name"), about_path %></li>
+      <li><%= link_to t("static_pages.contact.name"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%=t(".new")%></a></li>
+    </ul>
+  </nav>
+</footer>
