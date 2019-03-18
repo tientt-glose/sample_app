@@ -38,6 +38,7 @@ en:
   This is a home page for
   <a href="https://www.railstutorial.org/"> Ruby On Rails Tutorial</a>
   sample application.</p>'
+      signup: "Sign up now"
     about:
       name: "About"
       content_html: '<p>
@@ -58,5 +59,23 @@ en:
         <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
         book</a>.
         </p>'
+    contact:
+      name: "Contact"
+      content_html: '<p>
+        Contact the Ruby on Rails Tutorial about the sample app at the
+        <a href="https://www.railstutorial.org/contact">contact page</a>.
+        </p>'
+  users:
+    new:
+      name: "Sign up"
+      content_html: '<p>This will be a signup page for new users.</p>'
+  layouts:
+    footer:
+      new: "News"
+      info: 'The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+            by <a href="http://www.michaelhartl.com/">Michael Hartl</a>'
+    header:
+      login: "Login"
+      sample_app: "sample app"
   helpers:
     base_title: "Ruby on Rails Tutorial Sample App"

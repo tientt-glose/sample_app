@@ -38,6 +38,7 @@ vi:
         Đây là trang chủ của ứng dụng ví dụ dựa trên e-book
         <a href="https://www.railstutorial.org/"> hướng dẫn Ruby On Rails</a>.
         </p>'
+      signup: "Đăng ký ngay"
     about:
       name: "Về chúng tôi"
       content_html: '<p>
@@ -58,5 +59,23 @@ vi:
         <a href="https://www.railstutorial.org/book"><em>Ruby on Rails Tutorial</em>
         </a>.
         </p>'
+    contact:
+      name: "Liên hệ"
+      content_html: '<p>
+        Liên hệ với Ruby on Rails Tutorial về ứng dụng mẫu này tại
+        <a href="https://www.railstutorial.org/contact">trang liên hệ</a> sau.
+        </p>'
+  users:
+    new:
+      name: "Trang đăng ký"
+      content_html: '<p>Đây là trang đăng ký dành cho người mới.</p>'
+  layouts:
+    footer:
+      new: "Tin tức"
+      info: 'Hướng dẫn <a href="https://www.railstutorial.org/">Ruby on Rails</a>
+            bởi <a href="http://www.michaelhartl.com/">Michael Hartl</a>'
+    header:
+      login: "Đăng ký"
+      sample_app: "sample app"
   helpers:
     base_title: "Hướng dẫn Ruby on Rails "
