@@ -11,6 +11,16 @@ gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "uglifier", ">= 1.3.0"
 
+gem "bcrypt", "3.1.12"
+gem "bootstrap-sass", "3.3.7"
+gem "config"
+gem "i18n", "~> 1.6.0"
+gem "jquery-rails"
+gem "rails-i18n"
+gem "rubocop", "~> 0.54.0", require: false
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'font-awesome-sass', '~> 5.8.1'
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -27,11 +37,3 @@ group :test do
   gem "chromedriver-helper"
   gem "selenium-webdriver"
 end
-
-gem "bcrypt", "3.1.12"
-gem "bootstrap-sass", "3.3.7"
-gem "config"
-gem "i18n", "~> 1.6.0"
-gem "rails-i18n"
-gem "rubocop", "~> 0.54.0", require: false
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
