@@ -64,6 +64,7 @@ en:
       name: "Log in"
       email: "Email"
       pass: "Password"
+      remember: "Remember me on this computer"
       new: "New user? "
       signup_now: "Sign up now!"
   shared:
