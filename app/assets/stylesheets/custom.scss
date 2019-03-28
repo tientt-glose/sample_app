@@ -1,6 +1,8 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 @import 'colors.scss';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -88,14 +90,7 @@ footer {
   }
 
   small {
-    ul {
     float: left;
-    list-style: none;
-      li {
-        float: left;
-        margin-left: 15px;
-      }
-    }
   }
 
   ul {

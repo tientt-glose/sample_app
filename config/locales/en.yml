@@ -49,15 +49,33 @@ en:
       info: 'The <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
             by <a href="http://www.michaelhartl.com/">Michael Hartl</a>'
     header:
-      login: "Login"
+      login: "Log in"
+      logout: "Log out"
       sample_app: "sample app"
+      users: "Users"
+      acc: "Account"
+      profile: "Profile"
+      setting: "Settings"
+      lang:
+        en: "English"
+        vi: "Tiếng Việt"
+  sessions:
+    new:
+      name: "Log in"
+      email: "Email"
+      pass: "Password"
+      new: "New user? "
+      signup_now: "Sign up now!"
   shared:
     error_messages:
       content: "The form contains"
       err: "error"
+
   controllers:
     users:
       show:
         find: "We cannot find this account!"
+    sessions:
+      error_messages: "Invalid email/password combination"
   helpers:
     base_title: "Ruby on Rails Tutorial Sample App"

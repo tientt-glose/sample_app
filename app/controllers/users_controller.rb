@@ -3,7 +3,8 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      flash[:success] = t("users.new.u_message")
+      log_in @user
+      flash[:success] = t "users.new.u_message"
       redirect_to @user
     else
       render :new
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
     redirect_to root_path
-    flash[:danger] = t("controllers.users.show.find")
+    flash[:danger] = t "controllers.users.show.find"
   end
 
   private

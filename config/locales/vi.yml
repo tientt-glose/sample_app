@@ -49,15 +49,33 @@ vi:
       info: 'Hướng dẫn <a href="https://www.railstutorial.org/">Ruby on Rails</a>
             bởi <a href="http://www.michaelhartl.com/">Michael Hartl</a>'
     header:
-      login: "Đăng ký"
+      login: "Đăng nhập"
+      logout: "Đăng xuất"
       sample_app: "sample app"
+      users: "Người dùng"
+      acc: "Tài khoản"
+      profile: "Trang cá nhân"
+      setting: "Cài đặt"
+      lang:
+        en: "English"
+        vi: "Tiếng Việt"
+  sessions:
+    new:
+      name: "Trang đăng nhập"
+      email: "E-mail đăng nhập"
+      pass: "Mật khẩu"
+      new: "Chưa có tài khoản? "
+      signup_now: "Đăng ký ngay!"
   shared:
     error_messages:
       content: "Nội dung đăng ký có"
       err: "lỗi"
+
   controllers:
     users:
       show:
         find: "Chúng tôi không tìm thấy tài khoản này!"
+    sessions:
+      error_messages: "Sai tài khoản hoặc mật khẩu!"
   helpers:
     base_title: "Hướng dẫn Ruby on Rails "
