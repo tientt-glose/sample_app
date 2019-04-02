@@ -14,12 +14,12 @@ gem "uglifier", ">= 1.3.0"
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
 gem "config"
+gem "font-awesome-sass", "~> 5.8.1"
 gem "i18n", "~> 1.6.0"
 gem "jquery-rails"
 gem "rails-i18n"
 gem "rubocop", "~> 0.54.0", require: false
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'font-awesome-sass', '~> 5.8.1'
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

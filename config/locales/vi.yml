@@ -64,6 +64,7 @@ vi:
       name: "Trang đăng nhập"
       email: "E-mail đăng nhập"
       pass: "Mật khẩu"
+      remember: "Ghi nhớ đăng nhập"
       new: "Chưa có tài khoản? "
       signup_now: "Đăng ký ngay!"
   shared:
