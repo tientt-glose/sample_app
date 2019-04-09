@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   attr_reader :remember_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :email, presence: true,
     length: {maximum: Settings.maximum_email_length},
     format: {with: VALID_EMAIL_REGEX},

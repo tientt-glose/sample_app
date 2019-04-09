@@ -1,4 +1,5 @@
 vi:
+  size_alert: "Kích thước tối đa là 5mb. Vui lòng chọn lại hình khác."
   hello: "Hello world"
   static_pages:
     home:
@@ -8,6 +9,7 @@ vi:
         <a href="https://www.railstutorial.org/"> hướng dẫn Ruby On Rails</a>.
         </p>'
       signup: "Đăng ký ngay"
+      feed: "Tường Nhà Bạn"
     about:
       name: "Về chúng tôi"
       content_html: '<p>
@@ -45,6 +47,8 @@ vi:
       u_ava: "Thay đổi"
     index:
       name: "Danh sách tài khoản"
+    show:
+      name: "Bài đăng"
     form:
       u_name: "Họ và tên"
       u_email: "E-mail"
@@ -53,6 +57,12 @@ vi:
     user:
       delete: "Xóa"
       confirm: "Xác nhận xóa?"
+  microposts:
+      micropost:
+        confirm: "Xác nhận xóa?"
+        time_1: "Đăng"
+        time_2: "trước."
+        delete: "Xóa"
   layouts:
     footer:
       new: "Tin tức"
@@ -81,6 +91,12 @@ vi:
     error_messages:
       content: "Nội dung đăng ký có"
       err: "lỗi"
+    user_info:
+      view: "Xem trang cá nhân"
+      post: "bài đăng"
+    micropost_form:
+      post: "Đăng"
+      content: "Nhập nội dung ..."
 
   controllers:
     users:
@@ -94,11 +110,22 @@ vi:
         message: "Bạn chỉ có thể sửa thông tin tài khoản của mình."
       destroy:
         message: "Tài khoản đã được xóa"
+    microposts:
+      create:
+        succeed: "Tạo bài đăng thành công"
+      destroy:
+        succeed: "Đã xóa bài đăng"
+        fail: "Không xóa được bài đăng!"
     sessions:
       error_messages: "Sai tài khoản hoặc mật khẩu!"
   helpers:
     base_title: "Hướng dẫn Ruby on Rails "
+
   will_paginate:
     previous_label: "&#8592; Trang trước"
     next_label: "Trang sau &#8594;"
     page_gap: "&hellip;"
+
+  model:
+    micropost:
+      picture_size: "Ảnh không được vượt quá 5mb."

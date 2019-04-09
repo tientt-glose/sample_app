@@ -1,4 +1,5 @@
 en:
+  size_alert: "Maximum file size is 5MB. Please choose a smaller file."
   hello: "Hello world"
   static_pages:
     home:
@@ -8,6 +9,7 @@ en:
   <a href="https://www.railstutorial.org/"> Ruby On Rails Tutorial</a>
   sample application.</p>'
       signup: "Sign up now"
+      feed: "Micropost Feed"
     about:
       name: "About"
       content_html: '<p>
@@ -45,6 +47,8 @@ en:
       u_ava: "Change"
     index:
       name: "All users"
+    show:
+      name: "Microposts"
     form:
       u_name: "Name"
       u_email: "Email"
@@ -53,6 +57,12 @@ en:
     user:
       delete: "Delete"
       confirm: "You sure?"
+  microposts:
+    micropost:
+      confirm: "You sure?"
+      time_1: "Posted"
+      time_2: "ago."
+      delete: "Delete"
   layouts:
     footer:
       new: "News"
@@ -81,6 +91,12 @@ en:
     error_messages:
       content: "The form contains"
       err: "error"
+    user_info:
+      view: "View my profile"
+      post: "micropost"
+    micropost_form:
+      post: "Post"
+      content: "Compose new micropost..."
 
   controllers:
     users:
@@ -96,10 +112,21 @@ en:
         message: "User deleted"
     sessions:
       error_messages: "Invalid email/password combination"
+    microposts:
+      create:
+        succeed: "Micropost created"
+      destroy:
+        succeed: "Micropost deleted"
+        fail: "Micropost deletion failed!"
+
   helpers:
     base_title: "Ruby on Rails Tutorial Sample App"
+
   will_paginate:
     previous_label: "&#8592; Previous"
     next_label: "Next &#8594;"
     page_gap: "&hellip;"
 
+  model:
+    micropost:
+      picture_size: "Photos must not exceed 5mb."

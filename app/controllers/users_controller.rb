@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: %i[show edit destroy]
-  before_action :logged_in_user, only: %i[index edit destroy]
-  before_action :correct_user, only: %i[edit update]
+  before_action :find_user, only: %i(show edit destroy)
+  before_action :logged_in_user, only: %i(index edit destroy)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate page: params[:page]
     return if @user
     flash[:danger] = t "controllers.users.show.message"
     redirect_to root_path
@@ -59,21 +60,14 @@ class UsersController < ApplicationController
       :password_confirmation, :admin)
   end
 
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controllers.users.logged_in_user.message"
-    redirect_to login_url
+  def admin_user
+    redirect_to root_url unless current_user.admin?
   end
 
   def correct_user
     return if current_user.current_user?(@user)
     flash[:danger] = t "controllers.users.correct_user.message"
     redirect_to edit_user_path(current_user)
-  end
-
-  def admin_user
-    redirect_to root_url unless current_user.admin?
   end
 
   def find_user
