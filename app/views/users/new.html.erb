@@ -1,23 +1,9 @@
-<% provide :title, t(".name")%>
+<% provide :title, t(".name") %>
+<% provide :button_text, t(".u_create") %>
+<% provide :path_text, signup_path %>
 <h1><%= yield :title %> </h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_with model: @user, url: signup_path, local: true do |f| %>
-      <%= render "shared/error_messages" %>
-
-      <%= f.label :name, t(".u_name") %>
-      <%= f.text_field :name, class: 'form-control' %>
-
-      <%= f.label :email, t(".u_email") %>
-      <%= f.email_field :email, class: 'form-control' %>
-
-      <%= f.label :password, t(".u_pass") %>
-      <%= f.password_field :password, class: 'form-control' %>
-
-      <%= f.label :password_confirmation, t(".u_pass_cf") %>
-      <%= f.password_field :password_confirmation, class: 'form-control' %>
-
-      <%= f.submit t(".u_create"), class: "btn btn-primary" %>
-    <% end %>
+    <%= render "form" %>
   </div>
 </div>
