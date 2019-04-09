@@ -8,6 +8,12 @@ class Micropost < ApplicationRecord
 
   scope :created_at_desc, ->{order created_at: :desc}
 
+  scope(:status_feed, lambda do |user|
+    Micropost.where("user_id IN (:id)
+      OR user_id = :user_id", id: user.following_ids,
+      user_id: user.id)
+  end)
+
   mount_uploader :picture, PictureUploader
 
   private

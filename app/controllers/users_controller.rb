@@ -10,6 +10,8 @@ class UsersController < ApplicationController
 
   def show
     @microposts = @user.microposts.paginate page: params[:page]
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.active_relationships.find_by followed_id: @user.id
     return if @user
     flash[:danger] = t "controllers.users.show.message"
     redirect_to root_path

@@ -45,10 +45,17 @@ en:
       name: "Edit user"
       u_save: "Save changes"
       u_ava: "Change"
+    follow:
+      name: "Follow"
+    unfollow:
+      name: "Unfollow"
     index:
       name: "All users"
     show:
       name: "Microposts"
+    show_follow:
+      view: "View my profile"
+      post: "Micropost:"
     form:
       u_name: "Name"
       u_email: "Email"
@@ -63,6 +70,11 @@ en:
       time_1: "Posted"
       time_2: "ago."
       delete: "Delete"
+  relationships:
+    index:
+      following: "Following"
+      followers: "Follower"
+
   layouts:
     footer:
       new: "News"
@@ -97,6 +109,9 @@ en:
     micropost_form:
       post: "Post"
       content: "Compose new micropost..."
+    stats:
+      following: "Following %{count}"
+      followers: "Follower %{count}"
 
   controllers:
     users:
