@@ -37,12 +37,22 @@ en:
   users:
     new:
       name: "Sign up"
+      u_create: "Create my account"
+      u_message: "Welcome to the Sample App!"
+    edit:
+      name: "Edit user"
+      u_save: "Save changes"
+      u_ava: "Change"
+    index:
+      name: "All users"
+    form:
       u_name: "Name"
       u_email: "Email"
       u_pass: "Password"
       u_pass_cf: "Password Confirmation"
-      u_create: "Create my account"
-      u_message: "Welcome to the Sample App!"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
   layouts:
     footer:
       new: "News"
@@ -75,8 +85,21 @@ en:
   controllers:
     users:
       show:
-        find: "We cannot find this account!"
+        message: "We cannot find this account!"
+      update:
+        message: "Profile updated!"
+      logged_in_user:
+        message: "Please log in."
+      correct_user:
+        message: "You can only edit your account information."
+      destroy:
+        message: "User deleted"
     sessions:
       error_messages: "Invalid email/password combination"
   helpers:
     base_title: "Ruby on Rails Tutorial Sample App"
+  will_paginate:
+    previous_label: "&#8592; Previous"
+    next_label: "Next &#8594;"
+    page_gap: "&hellip;"
+

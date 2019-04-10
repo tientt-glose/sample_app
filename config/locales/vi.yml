@@ -37,12 +37,22 @@ vi:
   users:
     new:
       name: "Trang đăng ký"
+      u_create: "Đăng ký tài khoản"
+      u_message: "Chào mừng bạn đến với Sample App!"
+    edit:
+      name: "Sửa thông tin tài khoản"
+      u_save: "Lưu thay đổi"
+      u_ava: "Thay đổi"
+    index:
+      name: "Danh sách tài khoản"
+    form:
       u_name: "Họ và tên"
       u_email: "E-mail"
       u_pass: "Mật khẩu"
       u_pass_cf: "Xác nhận mật khẩu"
-      u_create: "Đăng ký tài khoản"
-      u_message: "Chào mừng bạn đến với Sample App!"
+    user:
+      delete: "Xóa"
+      confirm: "Xác nhận xóa?"
   layouts:
     footer:
       new: "Tin tức"
@@ -75,8 +85,20 @@ vi:
   controllers:
     users:
       show:
-        find: "Chúng tôi không tìm thấy tài khoản này!"
+        message: "Chúng tôi không tìm thấy tài khoản này!"
+      update:
+        message: "Cập nhật thông tin tài khoản thành công!"
+      logged_in_user:
+        message: "Hãy đăng nhập để tiếp tục!"
+      correct_user:
+        message: "Bạn chỉ có thể sửa thông tin tài khoản của mình."
+      destroy:
+        message: "Tài khoản đã được xóa"
     sessions:
       error_messages: "Sai tài khoản hoặc mật khẩu!"
   helpers:
     base_title: "Hướng dẫn Ruby on Rails "
+  will_paginate:
+    previous_label: "&#8592; Trang trước"
+    next_label: "Trang sau &#8594;"
+    page_gap: "&hellip;"

@@ -3,3 +3,4 @@ maximum_name_length: 50
 minimum_password_length: 6
 ava_size: 80
 remember_yes: "1"
+per_page: 15
