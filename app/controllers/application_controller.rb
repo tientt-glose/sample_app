@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
 
   private
+
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
@@ -12,10 +13,10 @@ class ApplicationController < ActionController::Base
     {locale: I18n.locale}
   end
 
-  # protect_from_forgery with: :exception
-  # chapter_3 Finish chapter_3
-  # chapter_3 Finish chapter_3
-  def hello
-    render html: "hello, world!"
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t "controllers.users.logged_in_user.message"
+    redirect_to login_url
   end
 end
