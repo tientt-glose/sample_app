@@ -4,7 +4,8 @@ maximum_post_length: 140
 minimum_password_length: 6
 ava_size: 80
 m_ava_size: 50
+s_ava_size: 30
 remember_yes: "1"
 per_page: 15
 standard_memory: 5
-Settings.px_size: 400
+px_size: 400

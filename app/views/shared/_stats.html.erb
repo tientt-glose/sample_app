@@ -1,0 +1,8 @@
+<% @user ||= current_user %>
+<div class="stats">
+<%= link_to t(".following", count: @user.following.count),
+    relationships_path(user_id: @user.id, type: "following") %>
+<%= link_to t(".followers", count: @user.followers.count),
+    relationships_path(user_id: @user.id, type: "followers") %>
+</div>
+

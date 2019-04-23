@@ -45,10 +45,17 @@ vi:
       name: "Sửa thông tin tài khoản"
       u_save: "Lưu thay đổi"
       u_ava: "Thay đổi"
+    follow:
+      name: "Theo dõi"
+    unfollow:
+      name: "Bỏ theo dõi"
     index:
       name: "Danh sách tài khoản"
     show:
       name: "Bài đăng"
+    show_follow:
+      view: "Xem trang cá nhân"
+      post: "Bài đăng:"
     form:
       u_name: "Họ và tên"
       u_email: "E-mail"
@@ -63,6 +70,11 @@ vi:
         time_1: "Đăng"
         time_2: "trước."
         delete: "Xóa"
+  relationships:
+    index:
+      following: "Bạn đang theo dõi"
+      followers: "Người theo dõi bạn"
+
   layouts:
     footer:
       new: "Tin tức"
@@ -97,6 +109,9 @@ vi:
     micropost_form:
       post: "Đăng"
       content: "Nhập nội dung ..."
+    stats:
+      following: "Đang theo dõi %{count}"
+      followers: "Người theo dõi %{count}"
 
   controllers:
     users:
